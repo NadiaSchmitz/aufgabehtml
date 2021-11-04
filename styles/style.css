@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  background-image: url(../bilder/background.jpg);
+  background-size: cover;
+}
+
+.layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.inner_wrapper {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  width: 980px;
+  min-height: calc(100vH);
+  background-color: #fbf5eb;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 0 30px 0;
+}
+
+.header_item {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  background-image: url(../bilder/logo.png);
+  background-position: 50%;
+  background-size: contain;
+  margin: 0;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.logo:hover {
+  background-image: url(../bilder/logo_hover.png);
+}
+
+.logo a {
+  display: block;
+  height: 150px;
+}
+
+.titel {
+  width: calc(100% - 155px);
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  color: #00685A;
+  text-align: right;
+  margin: 29px 0 31px 0;
+  padding: 0 20px 0 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #00685A;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+  color: #00685A;
+  padding: 0 20px 0 20px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  width: calc((100% - 50px) / 5);
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FFCD73;
+  margin: 0 5px 0 0;
+}
+
+nav li:last-child {
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  color: #000000;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -ms-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+nav li a:hover,
+nav li a:active,
+nav li a:focus {
+  background-color: #FFBB40;
+  color: #00685A;
+}
+
+.content_wrapper {
+  min-height: calc(100vH - 342px);
+  padding: 30px;
+}
+
+.content_item {
+  padding: 0 0 50px 0;
+}
+
+.content_item_image {
+  background-image: url(../bilder/title_image.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 50% 97%;
+}
+
+.content_item_image:last-of-type {
+  background-image: none;
+}
+
+.content_item_image:first-of-type {
+  background-image: url(../bilder/title_image.png);
+}
+
+.content_foto,
+.content_text,
+.content_preis {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content_foto {
+  width: 359px;
+  height: 213px;
+  background-image: url(../bilder/hotel.jpg);
+  margin: 0 30px 30px 0;
+}
+
+.content_text {
+  width: calc(100% - 395px);
+}
+
+.content_text_full {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+
+.content_text_item {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.content_text_item:last-of-type {
+  margin: 0;
+}
+
+footer {
+  background-color: #FFCD73;
+  padding: 20px;
+}
+
+.footer_content {
+  margin: 0 0 20px 0;
+}
+
+.footer_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+.footer_gruss {
+  font-family: 'Lobster', cursive;
+  font-size: 18px;
+  color: #00685A;
+  text-align: center;
+}
+
+/*Restaurant*/ 
+
+.content_tabelle .content_foto {
+  width: 250px;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.content_tabelle:nth-of-type(1) .content_foto {
+  background-image: url(../bilder/krebs.jpg);
+}
+
+.content_tabelle:nth-of-type(2) .content_foto {
+  background-image: url(../bilder/fisch.jpg);
+}
+
+.content_tabelle:nth-of-type(3) .content_foto {
+  background-image: url(../bilder/salat.jpg);
+}
+
+.content_tabelle .content_text {
+  width: calc(100% - 480px);
+  margin: 0 30px 0 0;
+  
+}
+
+.content_tabelle .content_preis {
+  width: 150px;
+  font-family: 'Lobster', cursive;
+  font-size: 22px;
+  color: #00685A;
+  text-align: center;
+}
+
+/*Galerie*/
+
+.galerie_item {
+  display: inline-block;
+  vertical-align: top;
+  width: calc((100% - 70px) / 3);
+  height: 200px;
+  background-size: cover;
+  background-position: 50%;
+  margin: 10px;
+}
+
+.galerie_foto_item:nth-of-type(1) {
+  background-image: url(../bilder/galerie_1.jpg);
+}
+
+.galerie_foto_item:nth-of-type(2) {
+  background-image: url(../bilder/galerie_2.jpg);
+}
+
+.galerie_foto_item:nth-of-type(3) {
+  background-image: url(../bilder/galerie_3.jpg);
+}
+
+.galerie_foto_item:nth-of-type(4) {
+  background-image: url(../bilder/galerie_4.jpg);
+}
+
+.galerie_foto_item:nth-of-type(5) {
+  background-image: url(../bilder/galerie_5.jpg);
+}
+
+.galerie_foto_item:nth-of-type(6) {
+  background-image: url(../bilder/galerie_6.jpg);
+}
+
+.content_item .galerie_video_item iframe {
+  height: 200px;
+}
+
+/*Kontakte*/
+
+.content_item .kontakt_item {
+  width: 200px;
+  font-size: 16px;
+  line-height: 30px;
+  background-size: 30px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto 20px;
+  padding: 0 0 0 50px;
+}
+
+.content_item .telefon {
+  background-image: url(../bilder/phone.png);
+}
+
+.content_item .fax {
+  background-image: url(../bilder/fax.png);
+}
+
+.content_item .email {
+  background-image: url(../bilder/email.png);
+}
+
+/*Wegbeschreibung*/
+
+.content_item iframe {
+  width: 100%;
+  height: 550px;
+}
+
+
+
+
+
